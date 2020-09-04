@@ -1,0 +1,65 @@
+﻿<?php
+    $servername = "localhost";
+    $username = "root";
+    $password = "";
+    $dbname = "studentflat";
+?>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<meta name="keywords" content="" />
+<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all">
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
+<script type="text/javascript" src="http://cdn.repository.webfont.com/wwwroot/js/wf/youziku.api.min.js"></script>
+<script type="text/javascript">
+   $webfont.load("body", "399c984283c448cebd1ba9cf51d49b3c", "LiSu");
+   $webfont.draw();
+</script>
+</head>
+<body>
+<div class="signupform">
+<img src="C:\Users\Lenovo\Desktop\本创\本创\images\just.jpg"  height="140"/>
+<h1>新生宿舍床位自选系统</h1>
+	<div class="container">		
+		<div class="agile_info">
+			<div class="w3l_form">
+				<div class="left_grid_info">
+					<h3>介绍</h3>					
+					<p>新生凭学号和密码(默认为身份证后六位)登录新生宿舍床位自选系统,在所属专业寝室划分的范围内，自主选择个人偏好的宿舍及床位。</p>
+                    <br></br>
+                    <p>若对选择过程有疑问，请及时与班助和班导师联系，确保及时完成宿舍床位的选择。</p>                                								
+				</div>
+			</div>
+			<div class="w3_info">
+                <div class="center">
+				<h2 style="text_align:center">新生登录</h2>
+                        <br></br>                                                        
+						<form action="select.php" method="post">
+						<div class="input-group">
+							<span><i class="fa fa-user" aria-hidden="true"></i></span>
+							<input type="text" name="name" placeholder="学号" required=""> 
+						</div>
+						
+						<div class="input-group">
+							<span><i class="fa fa-lock" aria-hidden="true"></i></span>
+							<input type="password" mame="password" placeholder="密码（身份证号码后六位）" required="">
+						</div>
+						
+						<br></br>       
+						<button class="btn btn-danger btn-block" type="submit" name="submit" >进入选择</button >                
+					    </form>
+			    </div>
+			</div>
+
+			<div class="clear"></div>
+			</div>		
+		</div>
+		<div class="footer">
+            <p>Copyright &copy; 2019.江苏科技大学</p>
+        </div>
+</div>
+</body>
+</html>
